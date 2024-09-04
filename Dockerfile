@@ -2,6 +2,8 @@
 # FROM docker.io/node:lts-alpine
 FROM docker.io/node:16.18.1-alpine3.16
 
+LABEL org.opencontainers.image.source=https://github.com/gic-indonesia/alpine-node-libreoffice.git
+
 ARG APP_ROOT=/opt/app-root/src
 ENV NO_UPDATE_NOTIFIER=true \
   PATH="/usr/lib/libreoffice/program:${PATH}" \
